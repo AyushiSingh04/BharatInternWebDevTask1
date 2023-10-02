@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: black;
+  height: 90vh;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+}
+
+.navbarContain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  list-style: none;
+  padding: 1rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #f0f0e6;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+
+.menu a:hover {
+  border-bottom: 2px solid #f0f0e6;
+}
+
+.name1 {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f0f0e6;
+  width: 100%;
+  text-align: center;
+}
+
+.name1 h1 {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.name1 p {
+  color: #f0f0e6;
+  font-size: 1.5rem;
+}
+
+.aboutme {
+  background-color: #050708fe;
+  padding: 6rem 0;
+}
+
+.aboutme .aboutheading {
+  color: #f0f0e6;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.aboutcontent img {
+  padding-top: 10px;
+  height: 200px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.aboutcontent p {
+  font-size: 1.2rem;
+  color: #f0f0e6;
+  padding: 0 2.3rem;
+  text-align: center;
+}
+
+.skills .skillsheading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f0f0e6;
+  text-align: center;
+}
+
+.aboutme .aboutcontent {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.aboutcontent .leftcontent {
+  flex-basis: 45%;
+  text-align: center;
+
+}
+
+.aboutcontent .rightcontent {
+  flex-basis: 45%;
+}
+
+.skillsbar {
+  padding: 25px 30px;
+}
+
+.skillsbar .bar {
+  margin: 25px 0;
+}
+
+.skillsbar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skillsbar .bar .info {
+  margin-bottom: 8px;
+  color: #f0f0e6;
+}
+
+.skillsbar .bar .progressline {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progressline span {
+  position: absolute;
+  background: #25b79f;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progressline .html {
+  width: 80%;
+}
+
+.progressline .css {
+  width: 70%;
+}
+
+.progressline .javascript {
+  width: 50%;
+}
+
+.progressline .java {
+  width: 90%;
+}
+
+.progressline .c {
+  width: 80%;
+}
+
+.progressline .Python {
+  width: 60%;
+}
+
+.bar .progressline span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -12px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #f0f0f0;
+}
+
+.bar .progressline span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: black;
+  font-size: 12px;
+  font-weight: 700;
+  background: #f0f0f0;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+.progressline .html::after {
+  content: "80%";
+}
+
+.progressline .css::after {
+  content: "70%";
+}
+
+.progressline .javascript::after {
+  content: "50%";
+}
+
+.progressline .java::after {
+  content: "90%";
+}
+
+.progressline .c::after {
+  content: "80%";
+}
+
+.progressline .Python::after {
+  content: "60%";
+}
+
+.navbar.solid {
+  background-color: #07374a;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px rgb(7 55 74 / 20%);
+  z-index: 500;
+}
+
+.navbar.solid .name {
+  display: inline-block;
+  color: #f0f0e6;
+  transition: color 1s ease 0s;
+}
+
+.name {
+  display: none;
+  color: #f0f0e6;
+  font-weight: 400;
+}
+
+
+.contact {
+  background: #ebeced;
+  background: black;
+  position: relative;
+  height: 50vh;
+}
+
+.contactcontent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contactcontent h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #f0f0e6;
+  padding-bottom: 0.5rem;
+}
+
+.contactcontent .mail {
+  color: #f0f0e6;
+  padding-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.contactcontent .links {
+  color: #f0f0e6;
+  padding: 0.5rem;
+  padding-bottom: 1.8rem;
+  font-size: 1rem;
+}
+
+.contactcontent a {
+  text-decoration: none;
+  color: #f0f0e6;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.contactcontent a:hover {
+  color: #25b79f;
+}
+
+@media (min-width: 1200px) and (max-width: 1900px) {
+  html {
+    font-size: 100%;
+  }
+
+  .aboutcontent .leftcontent {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .aboutcontent .rightcontent {
+    flex-basis: 100%;
+  }
+
+  .skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leftcontent h1 {
+    margin-top: 3.2rem;
+    text-align: center;
+  }
+
+  .rightcontent h1 {
+    margin-top: 3.2rem;
+    text-align: center;
+  }
+
+  .contactcontent {
+    width: 100%;
+  }
+}
